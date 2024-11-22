@@ -537,6 +537,10 @@ img {
     gap: .35rem;
 }
 
+.education_data{
+margin-bottom: 0.5cm;
+}
+
 .education_title,
 .experience_title,
 .certificate_year {
