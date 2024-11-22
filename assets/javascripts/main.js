@@ -81,9 +81,14 @@ function scrollTop() {
 
 window.addEventListener('scroll', scrollTop);
 
+
+
 /* Light/Dark mode */
 
 const themeButton = document.getElementById('theme-button');
+
+
+
 let darkTheme = 'dark-theme';
 let darkMode = localStorage.getItem("dark-mode");
 

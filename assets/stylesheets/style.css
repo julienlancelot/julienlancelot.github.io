@@ -400,6 +400,7 @@ img {
 
 .home_title {
     font-size: var(--h1-font-size);
+    text-transform: uppercase;
 }
 
 .home_profession {
@@ -484,9 +485,21 @@ img {
     text-align: center;
 }
 
+/* Title section */
+
+.main_title {
+   /*  font-size: var(--h1-font-size); */
+   font-family: 'Julius Sans One', sans-serif;
+   font-weight: 200;
+   font-size: 1.2cm;
+   transform:scale(1,1.15);
+   margin-bottom: 0.2cm;
+   margin-top: 0.2cm;
+   text-transform: uppercase;
+}
+
 /* Education page */
 
-.education_content,
 .experience_content,
 .certificate_content {
     display: flex;
@@ -560,7 +573,7 @@ img {
 
 .skills_text {
     display: inline-block;
-    width: 100px;
+    /* width: 100px; */
 }
 
 .skills_box {
