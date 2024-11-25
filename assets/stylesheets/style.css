@@ -585,11 +585,6 @@ img {
         display: inline-block;
     }
 
-    .section-title,
-    .profile_description {
-        text-align: initial;
-    }
-
     .home_container {
         gap: 1.5rem;
     }
@@ -605,20 +600,35 @@ img {
     .languages_text {
         width: 150px;
     }
+
 }
 
 /* override styles when printing */
 @media print {
-  .nav {
+  .nav,
+  .change-theme {
     visibility: hidden;
   }
+
+  .section-title {
+    text-align: left;
+  }
+
 
   .experience_time {
     display: none;
   }
 
+  .interests_container{
+    grid-template-columns: repeat(6, min-content);
+  }
+
+  .interests_content {
+    display: block;
+  }
+
   .break_for_print {
-      break-before: page;
+    break-before: page;
   }
 }
 
