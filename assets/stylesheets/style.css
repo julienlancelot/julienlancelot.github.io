@@ -461,6 +461,10 @@ img {
 
 /* Certificates */
 
+#certificates {
+    break-before: page;
+}
+
 .certificate_container {
     gap: 0.75rem;
 }
