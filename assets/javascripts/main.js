@@ -125,9 +125,9 @@ const downloadButton = document.getElementById('download-button');
 
 downloadButton.addEventListener('click', () => {
     if (document.body.classList.contains(darkTheme)) {
-        downloadButton.href = "assets/pdf/myResumeCV-dark.pdf";
+        downloadButton.href = "assets/pdf/resume-julien-lancelot_black.pdf";
     } else {
-        downloadButton.href = "assets/pdf/myResumeCV-light.pdf";
+        downloadButton.href = "assets/pdf/resume-julien-lancelot_light.pdf";
     }
 });
 

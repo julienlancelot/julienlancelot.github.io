@@ -614,7 +614,6 @@ img {
     text-align: left;
   }
 
-
   .experience_time {
     display: none;
   }
@@ -648,6 +647,11 @@ body.scale-cv {
 .scale-cv .change-theme,
 .scale-cv .generate-pdf {
     display: none;
+}
+
+.scale-cv .break_for_pdf {
+    break-before: page;
+    padding-top: 1.5rem;
 }
 
 .scale-cv .bd-container {
@@ -749,6 +753,4 @@ body.scale-cv {
     width: 150px;
 }
 
-.scale-cv .break_for_pdf {
-    break-before: page;
-}
+
