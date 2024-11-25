@@ -409,7 +409,6 @@ img {
 
 .skills_text {
     display: inline-block;
-    /* width: 100px; */
 }
 
 .skills_box {
@@ -461,7 +460,7 @@ img {
 
 /* Certificates */
 
-#certificates {
+.certificate {
     break-before: page;
 }
 
@@ -751,4 +750,8 @@ body.scale-cv {
 
 .scale-cv .languages_text {
     width: 115px;
+}
+
+.scale-cv .interests_container {
+    width: 150px;
 }
