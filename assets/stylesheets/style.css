@@ -92,119 +92,6 @@ body.dark-theme {
     color: var(--title-color);
 }
 
-/* Scale CV */
-
-body.scale-cv {
-    --h1-font-size: 0.938rem;
-    --h2-font-size: 0.938rem;
-    --h3-font-size: 0.875rem;
-    --normal-font-size: 0.813rem;
-    --small-font-size: 0.75rem;
-    --smaller-font-size: 0.688rem;
-}
-
-/* PDF A4 */
-
-.scale-cv .change-theme,
-.scale-cv .generate-pdf {
-    display: none;
-}
-
-.scale-cv .bd-container {
-    max-width: 695px;
-}
-
-.scale-cv .section {
-    padding: 1.5rem 0 0.80rem;
-}
-
-.scale-cv .section-title {
-    margin-bottom: 0.75rem;
-}
-
-.scale-cv .resume {
-    /* height: 1122px; */
-}
-
-.scale-cv .resume_left {
-    width: 250px;
-    padding: 0 1.25rem;
-}
-
-.scale-cv .resume_right {
-    padding: 0 1rem 0 1.25rem;
-}
-
-.scale-cv .home_img {
-    width: 100px;
-    height: 100px;
-}
-
-.scale-cv .home_container {
-    gap: 1.5rem;
-}
-
-.scale-cv .home_data {
-    gap: 0.25rem;
-}
-
-.scale-cv .home_address {
-    gap: 0.75rem;
-}
-
-.scale-cv .home_icon,
-.scale-cv .social_icon,
-.scale-cv .interests_icon {
-    font-size: 1rem;
-}
-
-.scale-cv .education_container,
-.scale-cv .experience_container,
-.scale-cv .certificate_container {
-    width: 250px;
-    gap: 0,25rem;
-}
-
-.scale-cv .education_time,
-.scale-cv .experience_time,
-.scale-cv .certificate_item {
-    padding-right: 0.5rem;
-}
-
-.scale-cv .experience_rounder {
-    width: 11px;
-    height: 11px;
-    margin-top: 0.22rem;
-}
-
-.scale-cv .experience_line {
-    width: 2px;
-    transform: translate(4.4px, -2px);
-}
-
-.scale-cv .education_data,
-.scale-cv .experience_data,
-.scale-cv .certificate_data {
-    gap: 0.25rem;
-}
-
-.scale-cv .certificate_rounder {
-    width: 4px;
-    height: 4px;
-}
-
-.scale-cv .skills_content {
-    gap: 0.25rem;
-}
-
-.scale-cv .languages_content {
-    gap: 0.25rem;
-}
-
-.scale-cv .languages_text {
-    width: 115px;
-}
-
 /* Body */
 
 body {
@@ -438,39 +325,13 @@ img {
     color: var(--container-color);
 }
 
-/* Social page */
-
-.social_container {
-    grid-template-columns: max-content;
-    gap: 1rem;
-}
-
-.social_link {
-    display: inline-flex;
-    align-items: center;
-    font-size: var(--small-font-size);
-    color: var(--text-color);
-}
-
-.social_link:hover {
-    color: var(--title-color);
-}
-
-.social_icon {
-    font-size: 1.2rem;
-    display: flex;
-    width: 25px;
-    justify-content: center;
-    margin-right: 0.75rem;
-}
-
-/* Profile page */
+/* Profile */
 
 .profile_description {
     text-align: center;
 }
 
-/* Title section */
+/* Title */
 
 .main_title {
    /*  font-size: var(--h1-font-size); */
@@ -483,20 +344,17 @@ img {
    text-transform: uppercase;
 }
 
-/* Education page */
 
-.experience_content,
-.certificate_content {
+/* Experience */
+
+.experience_content {
     display: flex;
 }
 
-.education_time,
-.experience_time,
-.certificate_item {
+.experience_time {
     padding-right: 1rem;
 }
 
-.education_rounder,
 .experience_rounder {
     position: relative;
     display: block;
@@ -507,7 +365,6 @@ img {
     margin-top: .25rem;
 }
 
-.education_line,
 .experience_line {
     display: block;
     width: 2px;
@@ -516,30 +373,19 @@ img {
     transform: translate(7px, 0);
 }
 
-.education_data,
-.experience_data,
-.certificate_data {
-    gap: .35rem;
+.experience_data {
+  gap: .35rem;
 }
 
-.education_data{
-margin-bottom: 0.5cm;
-}
-
-.education_title,
-.experience_title,
-.certificate_year {
+.experience_title {
     font-size: var(--h3-font-size);
 }
 
-.education_studies,
-.experience_company,
-.certificate_title {
+.experience_company {
     font-size: var(--small-font-size);
     color: var(--title-color);
 }
 
-.education_year,
 .experience_year {
     font-size: var(--smaller-font-size);
 }
@@ -548,6 +394,7 @@ margin-bottom: 0.5cm;
     color: var(--text-color-light);
     font-size: var(--smaller-font-size);
 }
+
 
 /* Skills */
 
@@ -581,25 +428,67 @@ margin-bottom: 0.5cm;
     border-radius: 6px;
 }
 
+/* Education page */
+
+.experience_content {
+    display: flex;
+}
+
+.education_time {
+    padding-right: 1rem;
+}
+
+.education_data {
+  gap: .35rem;
+}
+
+.education_data {
+  margin-bottom: 0.5cm;
+}
+
+.education_title {
+    font-size: var(--h3-font-size);
+}
+
+.education_studies {
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+}
+
+.education_year {
+    font-size: var(--smaller-font-size);
+}
+
 /* Certificates */
 
 .certificate_container {
     gap: 0.75rem;
 }
 
-.certificate_rounder {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background-color: var(--text-color-light);
-    border-radius: 50%;
-    margin-right: 0.38rem;
-    margin-left: 0.37rem;
+.certificate_item {
+    padding-right: 1rem;
 }
 
-.certificate_honours {
+.certificate_data {
+    gap: .35rem;
+    margin-bottom: 0.5cm;
+}
+
+.certificate_title {
+    font-size: var(--h3-font-size);
+}
+
+.certificate_year {
     font-size: var(--smaller-font-size);
-    color: var(--text-color);
+}
+
+.certificate_studies,
+.certificate_title {
+    color: var(--title-color);
+}
+
+.certificate_studies {
+    font-size: var(--small-font-size);
 }
 
 /* Languages */
@@ -745,4 +634,117 @@ margin-bottom: 0.5cm;
         column-gap: 3.5rem;
         padding-left: 2rem;
     }
+}
+
+/* Scale CV */
+
+body.scale-cv {
+    --h1-font-size: 0.938rem;
+    --h2-font-size: 0.938rem;
+    --h3-font-size: 0.875rem;
+    --normal-font-size: 0.813rem;
+    --small-font-size: 0.75rem;
+    --smaller-font-size: 0.688rem;
+}
+
+/* PDF A4 */
+
+.scale-cv .change-theme,
+.scale-cv .generate-pdf {
+    display: none;
+}
+
+.scale-cv .bd-container {
+    max-width: 695px;
+}
+
+.scale-cv .section {
+    padding: 1.5rem 0 0.80rem;
+}
+
+.scale-cv .section-title {
+    margin-bottom: 0.75rem;
+}
+
+.scale-cv .resume {
+    /* height: 1122px; */
+}
+
+.scale-cv .resume_left {
+    width: 250px;
+    padding: 0 1.25rem;
+}
+
+.scale-cv .resume_right {
+    padding: 0 1rem 0 1.25rem;
+}
+
+.scale-cv .home_img {
+    width: 100px;
+    height: 100px;
+}
+
+.scale-cv .home_container {
+    gap: 1.5rem;
+}
+
+.scale-cv .home_data {
+    gap: 0.25rem;
+}
+
+.scale-cv .home_address {
+    gap: 0.75rem;
+}
+
+.scale-cv .home_icon,
+.scale-cv .social_icon,
+.scale-cv .interests_icon {
+    font-size: 1rem;
+}
+
+.scale-cv .profile_description,
+.scale-cv .experience_container {
+    width: 500px;
+    gap: 0,25rem;
+}
+
+.scale-cv .experience_time,
+.scale-cv .certificate_item {
+    padding-right: 0.5rem;
+}
+
+.scale-cv .experience_rounder {
+    width: 11px;
+    height: 11px;
+    margin-top: 0.22rem;
+}
+
+.scale-cv .experience_line {
+    width: 2px;
+    transform: translate(4.4px, -2px);
+}
+
+.scale-cv .education_data,
+.scale-cv .experience_data,
+.scale-cv .certificate_data {
+    gap: 0.25rem;
+}
+
+.scale-cv .certificate_rounder {
+    width: 4px;
+    height: 4px;
+}
+
+.scale-cv .education_container,
+.scale-cv .certificate_container,
+.scale-cv .skills_content {
+    gap: 0.25rem;
+}
+
+.scale-cv .languages_content {
+    gap: 0.25rem;
+}
+
+.scale-cv .languages_text {
+    width: 115px;
 }
