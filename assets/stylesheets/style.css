@@ -148,8 +148,7 @@ body.scale-cv {
     gap: 0.25rem;
 }
 
-.scale-cv .home_address,
-.scale-cv .social_container {
+.scale-cv .home_address {
     gap: 0.75rem;
 }
 
@@ -162,8 +161,8 @@ body.scale-cv {
 .scale-cv .education_container,
 .scale-cv .experience_container,
 .scale-cv .certificate_container {
-    width: 500px;
-    gap: 1rem;
+    /* width: 500px; */
+    gap: 0,25rem;
 }
 
 .scale-cv .education_time,
@@ -172,14 +171,12 @@ body.scale-cv {
     padding-right: 0.5rem;
 }
 
-.scale-cv .education_rounder,
 .scale-cv .experience_rounder {
     width: 11px;
     height: 11px;
     margin-top: 0.22rem;
 }
 
-.scale-cv .education_line,
 .scale-cv .experience_line {
     width: 2px;
     transform: translate(4.4px, -2px);
@@ -198,18 +195,6 @@ body.scale-cv {
 
 .scale-cv .skills_content {
     gap: 0.25rem;
-}
-
-.scale-cv .skills_box {
-    width: 100px;
-    height: 8px;
-    border-radius: 4px;
-}
-
-.scale-cv .skills_progress {
-    height: 8px;
-    border-radius: 4px;
-    transform: translate(0.01px, 0);
 }
 
 .scale-cv .languages_content {
