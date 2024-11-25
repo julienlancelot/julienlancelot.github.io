@@ -605,17 +605,17 @@ img {
 
 /* override styles when printing */
 @media print {
+
   .nav,
-  .change-theme {
-    visibility: hidden;
+  .change-theme,
+  .home_button-movil,
+  .experience_time,
+  .scrolltop {
+    display: none;
   }
 
   .section-title {
     text-align: left;
-  }
-
-  .experience_time {
-    display: none;
   }
 
   .interests_container{
