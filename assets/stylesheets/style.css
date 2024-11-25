@@ -329,6 +329,7 @@ img {
 
 .profile_description {
     text-align: center;
+    font-size: var(--small-font-size);
 }
 
 /* Title */
@@ -441,10 +442,6 @@ img {
   gap: .35rem;
 }
 
-.education_data {
-  margin-bottom: 0.5cm;
-}
-
 .education_title {
     font-size: var(--h3-font-size);
 }
@@ -535,6 +532,8 @@ img {
     font-size: 1.2rem;
     color: var(--text-color-light);
 }
+
+/* scrolltop */
 
 .scrolltop {
     position: fixed;
@@ -632,22 +631,18 @@ img {
         padding-left: 0;
     }
 
-    .interests_container {
-        grid-template-columns: repeat(4, max-content);
-        column-gap: 3.5rem;
-        padding-left: 2rem;
-    }
+
 }
 
 /* Scale CV */
 
 body.scale-cv {
-    --h1-font-size: 0.938rem;
-    --h2-font-size: 0.938rem;
-    --h3-font-size: 0.875rem;
-    --normal-font-size: 0.813rem;
-    --small-font-size: 0.75rem;
-    --smaller-font-size: 0.688rem;
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.875rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.688rem;
 }
 
 /* PDF A4 */
@@ -670,7 +665,7 @@ body.scale-cv {
 }
 
 .scale-cv .resume {
-    /* height: 1122px; */
+    height: 2244px;
 }
 
 .scale-cv .resume_left {
