@@ -441,10 +441,6 @@ img {
 
 /* Certificates */
 
-.certificate {
-    break-before: page;
-}
-
 .certificate_container {
     gap: 0.75rem;
 }
@@ -620,6 +616,10 @@ img {
   .experience_time {
     display: none;
   }
+
+  .break_for_print {
+      break-before: page;
+  }
 }
 
 /* Scale CV */
@@ -737,4 +737,8 @@ body.scale-cv {
 
 .scale-cv .interests_container {
     width: 150px;
+}
+
+.scale-cv .break_for_pdf {
+    break-before: page;
 }
