@@ -328,23 +328,8 @@ img {
 /* Profile */
 
 .profile_description {
-    text-align: center;
     font-size: var(--small-font-size);
 }
-
-/* Title */
-
-.main_title {
-   /*  font-size: var(--h1-font-size); */
-   font-family: 'Julius Sans One', sans-serif;
-   font-weight: 200;
-   font-size: 1.2cm;
-   transform:scale(1,1.15);
-   margin-bottom: 0.2cm;
-   margin-top: 0.2cm;
-   text-transform: uppercase;
-}
-
 
 /* Experience */
 
@@ -401,7 +386,6 @@ img {
 
 .skills_content {
     gap: 0.2rem;
-    padding-left: 2rem;
 }
 
 .skills_name {
@@ -495,7 +479,6 @@ img {
 
 .languages_content {
     gap: 0.2rem;
-    padding-left: 2rem;
 }
 
 .languages_name {
@@ -626,12 +609,17 @@ img {
     .languages_text {
         width: 150px;
     }
+}
 
-    .skills_content {
-        padding-left: 0;
-    }
+/* override styles when printing */
+@media print {
+  .nav {
+    visibility: hidden;
+  }
 
-
+  .experience_time {
+    display: none;
+  }
 }
 
 /* Scale CV */
