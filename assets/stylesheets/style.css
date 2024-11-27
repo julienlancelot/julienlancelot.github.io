@@ -143,6 +143,12 @@ img {
     margin-bottom: var(--margin-3);
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Layout */
 
 .bd-container {
@@ -358,12 +364,6 @@ img {
   gap: .35rem;
 }
 
-.experience_row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .experience_title {
     flex-basis: 40%;
     font-size: var(--h3-font-size);
@@ -383,6 +383,13 @@ img {
 .experience_description {
     color: var(--text-color-light);
     font-size: var(--smaller-font-size);
+}
+
+.experience_responsibilities,
+.experience_achievements,
+.experience_impact {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
 }
 
 
@@ -418,10 +425,6 @@ img {
 
 /* Education page */
 
-.education_content {
-    display: flex;
-}
-
 .education_time {
     padding-right: 1rem;
 }
@@ -441,6 +444,7 @@ img {
 
 .education_year {
     font-size: var(--smaller-font-size);
+    text-align: right;
 }
 
 /* Certificates */
@@ -479,6 +483,7 @@ img {
 
 .languages_content {
     gap: 0.2rem;
+    list-style: none;
 }
 
 .languages_name {
