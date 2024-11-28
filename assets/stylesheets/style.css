@@ -152,7 +152,7 @@ img {
 /* Layout */
 
 .bd-container {
-    max-width: 968px;
+    max-width: 1080px;
     width: calc(100% - 3rem);
     margin-left: var(--margin-3);
     margin-right: var(--margin-3);
@@ -329,7 +329,7 @@ img {
 /* Profile */
 
 .profile_description {
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
 }
 
 /* Experience */
@@ -365,31 +365,38 @@ img {
 }
 
 .experience_title {
-    flex-basis: 40%;
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
 }
 
 .experience_company {
-    font-size: var(--small-font-size);
-    color: var(--title-color);
+  padding-left: 0.5rem;
 }
 
 .experience_year {
     flex-basis: 30%;
     text-align: right;
+    margin-left:auto;
     font-size: var(--smaller-font-size);
 }
 
 .experience_description {
     color: var(--text-color-light);
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
 }
 
 .experience_responsibilities,
 .experience_achievements,
 .experience_impact {
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
   color: var(--text-color-light);
+  padding-top: 0.35rem;
+}
+
+.experience_responsibilities_title,
+.experience_achievements_title,
+.experience_achievements_title{
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
 }
 
 
@@ -654,7 +661,8 @@ body.scale-cv {
 /* PDF A4 */
 
 .scale-cv .change-theme,
-.scale-cv .generate-pdf {
+.scale-cv .generate-pdf,
+.scale-cv .experience_time {
     display: none;
 }
 
@@ -676,7 +684,7 @@ body.scale-cv {
 }
 
 .scale-cv .resume {
-    height: 2244px;
+    height: 3366px;
 }
 
 .scale-cv .resume_left {
@@ -717,20 +725,8 @@ body.scale-cv {
     gap: 0,25rem;
 }
 
-.scale-cv .experience_time,
 .scale-cv .certificate_item {
     padding-right: 0.5rem;
-}
-
-.scale-cv .experience_rounder {
-    width: 11px;
-    height: 11px;
-    margin-top: 0.22rem;
-}
-
-.scale-cv .experience_line {
-    width: 2px;
-    transform: translate(4.4px, -2px);
 }
 
 .scale-cv .education_data,

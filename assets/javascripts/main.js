@@ -125,7 +125,7 @@ const downloadButton = document.getElementById('download-button');
 
 downloadButton.addEventListener('click', () => {
     if (document.body.classList.contains(darkTheme)) {
-        downloadButton.href = "assets/pdf/resume-julien-lancelot_black.pdf";
+        downloadButton.href = "assets/pdf/resume-julien-lancelot_dark.pdf";
     } else {
         downloadButton.href = "assets/pdf/resume-julien-lancelot_light.pdf";
     }
