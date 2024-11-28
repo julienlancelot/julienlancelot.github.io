@@ -183,6 +183,10 @@ img {
     align-items: center;
 }
 
+.nav_menu {
+  list-style: none;
+}
+
 @media screen and (max-width: 968px) {
     .nav_menu {
         position: fixed;
