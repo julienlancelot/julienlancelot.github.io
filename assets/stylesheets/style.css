@@ -17,8 +17,8 @@
     --body-font: 'Poppins', sans-serif;
 
     /* Fonts size */
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
+    --h1-font-size: 1.25rem;
+    --h2-font-size: 1.15rem;
     --h3-font-size: 1rem;
     --normal-font-size: .938rem;
     --small-font-size: .875rem;
@@ -130,7 +130,7 @@ img {
 /* Class CSS */
 
 .section {
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
 }
 
 .section-title {
@@ -140,7 +140,7 @@ img {
     text-transform: uppercase;
     letter-spacing: .35rem;
     text-align: center;
-    margin-bottom: var(--margin-3);
+    margin-bottom: var(--margin-1);
 }
 
 .row {
@@ -372,6 +372,11 @@ img {
     font-size: var(--h2-font-size);
 }
 
+.experience_detail_title {
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+}
+
 .experience_company {
   padding-left: 0.5rem;
 }
@@ -388,20 +393,13 @@ img {
     font-size: var(--small-font-size);
 }
 
-.experience_responsibilities,
-.experience_achievements,
-.experience_impact {
+.experience_detail {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   padding-top: 0.35rem;
 }
 
-.experience_responsibilities_title,
-.experience_achievements_title,
-.experience_achievements_title{
-  font-size: var(--normal-font-size);
-  color: var(--text-color);
-}
+
 
 
 /* Skills */
@@ -606,7 +604,7 @@ img {
     }
 
     .home_container {
-        gap: 1.5rem;
+        gap: .5rem;
     }
 
     .home_button-movil {
@@ -654,15 +652,13 @@ img {
 /* Scale CV */
 
 body.scale-cv {
-  --h1-font-size: 0.938rem;
-  --h2-font-size: 0.938rem;
-  --h3-font-size: 0.875rem;
-  --normal-font-size: 0.813rem;
-  --small-font-size: 0.75rem;
-  --smaller-font-size: 0.688rem;
+  --h1-font-size: 0.98rem;
+  --h2-font-size: 0.85rem;
+  --h3-font-size: 0.76rem;
+  --normal-font-size: 0.72rem;
+  --small-font-size: 0.7rem;
+  --smaller-font-size: 0.6rem;
 }
-
-/* PDF A4 */
 
 .scale-cv .change-theme,
 .scale-cv .generate-pdf,
@@ -688,7 +684,7 @@ body.scale-cv {
 }
 
 .scale-cv .resume {
-    height: 3366px;
+    height: 2244px;
 }
 
 .scale-cv .resume_left {
