@@ -399,7 +399,9 @@ img {
   padding-top: 0.35rem;
 }
 
-
+.experience_detail_standalone ul {
+  padding-inline-start: 20px;
+}
 
 
 /* Skills */
